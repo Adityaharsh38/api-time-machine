@@ -1,0 +1,55 @@
+
+{
+  "name": "api-time-machine",
+  "version": "1.0.0",
+  "description": "Record, replay and simulate HTTP API responses for reliable offline development and testing.",
+  "type": "module",
+  "main": "./src/index.js",
+  "homepage": "https://github.com/Adityaharsh38/api-time-machine#readme",
+"repository": {
+  "type": "git",
+  "url": "https://github.com/Adityaharsh38/api-time-machine.git"
+},
+"bugs": {
+  "url": "https://github.com/Adityaharsh38/api-time-machine/issues"
+},
+"files": [
+  "src/",
+  "README.md",
+  "LICENSE"
+],
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "atm": "./src/cli/index.js"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "node examples/demo.js"
+  },
+  "keywords": [
+    "api",
+    "http",
+    "record",
+    "replay",
+    "mock",
+    "testing",
+    "offline",
+    "fetch",
+    "simulation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.0"
+  }
+  
+}
